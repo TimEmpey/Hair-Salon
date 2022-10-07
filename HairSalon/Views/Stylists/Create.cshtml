@@ -8,6 +8,6 @@
 @using (Html.BeginForm())
 {
   @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})
-  <button type="submit" class="btn btn-outline-info add">Add</button>
+  <button type="submit">Add</button>
 }
-<button class="btn btn-outline-info show">@Html.ActionLink("Show all cuisines", "Index")</button>
+<button>@Html.ActionLink("All Stylists", "Index")</button>
