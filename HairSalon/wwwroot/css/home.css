@@ -13,7 +13,7 @@ body{
 
 .homeImg {  
   border: solid pink 15px;
-  margin-top: 150px;
+  margin-top: 260px;
   position: absolute;
   animation: slide 4s;
 }
@@ -26,28 +26,11 @@ body{
 .homeImg2 {
   border: solid pink 15px;
   margin-top: 80px;
-  margin-left:65.5%;
+  margin-left:61.1%;
   position: absolute;
   animation: slide2 4s;
 }
 @keyframes slide2 {
-  0% { right: -150%; }
-  50% { right: 1%; }
-  100% { right: 0%; }
-}
-
-.quote{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  background-color: white;
-  padding: 8px;
-  border: solid pink 10px;
-  margin-top: 450px;
-  margin-left: 80%;
-  position: absolute;
-  animation: slide3 5s;
-}
-@keyframes slide3 {
   0% { right: -150%; }
   50% { right: 1%; }
   100% { right: 0%; }

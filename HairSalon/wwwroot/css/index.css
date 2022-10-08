@@ -1,0 +1,28 @@
+body{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/513e12c3e4b0abff73bfbe90/1648226409496-H1SISE9CYVOXMUKUOH3Q/IMG_2072.jpeg");
+  background-position-y: -350px;
+  overflow: hidden;
+}
+
+.contents{
+  text-align: center;
+  background-color: white;
+  margin-left: 30%;
+  margin-top: 20px;
+  width: 600px;
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 500px;
+  padding-top: 20px;
+  border-radius: 4px;
+  border: solid pink 9px;
+}
+
+p{
+  text-decoration: none;
+  color: black;
+  font-size: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
