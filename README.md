@@ -26,6 +26,15 @@ _Website designed with the employees in mind to track current and past stylists,
 * _Configure files with '$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0' & '$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2'_
 * _Run '$ dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0' to install Lazy Loading_
 * _Run '$ dotnet restore'_
+* _Create file names 'appsettings.json'_
+* _Enter the following into the file_
+'''json
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=tim_empey;uid=root;pwd=YOUR_PASSWORD;"
+  }
+}
+'''
 * _Enter '$ dotnet run to start program'_
 
 ## Known Bugs
