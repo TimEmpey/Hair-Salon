@@ -28,13 +28,13 @@ _Website designed with the employees in mind to track current and past stylists,
 * _Run '$ dotnet restore'_
 * _Create file names 'appsettings.json'_
 * _Enter the following into the file_
-'''json
+```json
 {
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=tim_empey;uid=root;pwd=YOUR_PASSWORD;"
   }
 }
-'''
+```
 * _Enter '$ dotnet run to start program'_
 
 ## Known Bugs
