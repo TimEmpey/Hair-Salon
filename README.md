@@ -35,6 +35,8 @@ _Website designed with the employees in mind to track current and past stylists,
   }
 }
 ```
+* _To setup the database you open up MySQL and under 'Administration' select 'Data Import'_
+* _Check the 'Import from self contained file' option and enter the file path of the Database within HairSalon, then start Import_
 * _Enter '$ dotnet run to start program'_
 
 ## Known Bugs
