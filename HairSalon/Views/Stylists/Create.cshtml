@@ -6,9 +6,14 @@
 @model HairSalon.Models.Stylist
 
 <h2>Add Stylist</h1>
-@using (Html.BeginForm())
-{
-  @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})
-  <button type="submit">Add</button>
-}
-<button>@Html.ActionLink("All Stylists", "Index")</button>
+<div class="contents">
+  @using (Html.BeginForm())
+  {
+    @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})
+    <br><br>
+    @Html.TextBoxFor(model => model.Hired, new { placeholder = "Hired On"})
+    <br><br>
+    <button type="submit">Add</button>
+    <br><br>
+  }
+</div>

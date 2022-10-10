@@ -10,16 +10,16 @@
   @using (Html.BeginForm())
   {
     @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})<br>
-    <br>
+    <br><br>
     @Html.TextBoxFor(model => model.Regular, new { placeholder ="Regular Style", style = "width: 183px"})<br>
-    <br>
+    <br><br>
     @Html.TextBoxFor(model => model.Last, new { placeholder = "Last Visit", style = "width: 183px"})<br>
-    <br>
+    <br><br>
     @Html.TextBoxFor(model => model.Total, new { @Type = "number", placeholder = "Total Visits"})<br>
-    <br>
+    <br><br>
     @Html.DropDownList("StylistId")
-    <br>
+    <br><br>
     <button type="submit">Add Client</button>
+    <br><br>
   }
 </div>
-<button>@Html.ActionLink("All Clients", "Index")</button>

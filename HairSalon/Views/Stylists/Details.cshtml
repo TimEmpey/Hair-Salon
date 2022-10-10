@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/index.css">
+
+@model HairSalon.Models.Stylist
+
+<h2>@Model.Name Information</h2>
+<div class="contents">
+  <p>@Html.DisplayFor(model => model.Name)</p>
+  <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+  <p>@Html.DisplayNameFor(model => model.Hired) On: @Html.DisplayFor(model => model.Hired)</p>
+
+  <button>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</button>
+  <button>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</button>
+  <button>@Html.ActionLink("Back to Stylists", "Index")</button>  
+</div>

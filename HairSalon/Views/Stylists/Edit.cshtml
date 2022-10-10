@@ -1,23 +1,25 @@
 @{
   Layout = "_Layout";
 }
+<link rel="stylesheet" href="~/css/index.css">
 
 @model HairSalon.Models.Stylist
 
 <h2>Edit</h2>
 
-<h4>Edit Stylist: @Html.DisplayFor(model => model.Name)</h4>
+<div class="contents">
+  <p>Edit Stylist: @Html.DisplayFor(model => model.Name)</p>
+  @using (Html.BeginForm())
+  {
+    @Html.HiddenFor(model => model.StylistId)
 
-@using (Html.BeginForm())
-{
-  @Html.HiddenFor(model => model.StylistId)
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
 
-  @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
+    @Html.LabelFor(model => model.Hired)
+    @Html.EditorFor(model => model.Hired)
 
-  @Html.LabelFor(model => model.Hired)
-  @Html.EditorFor(model => model.Hired)
-
-  <button type="submit">Save</button>
-}
-<button>@Html.ActionLink("Back to list", "Index")</button>
+    <button type="submit">Save</button>
+  }
+  <button>@Html.ActionLink("Back to list", "Index")</button>  
+</div>
