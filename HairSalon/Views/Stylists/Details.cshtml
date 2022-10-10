@@ -3,6 +3,7 @@
 }
 <link rel="stylesheet" href="~/css/index.css">
 
+@using HairSalon.Models
 @model HairSalon.Models.Stylist
 
 <h2>@Model.Name Information</h2>
@@ -13,5 +14,12 @@
 
   <button>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</button>
   <button>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</button>
-  <button>@Html.ActionLink("Back to Stylists", "Index")</button>  
+  <button>@Html.ActionLink("Back to Stylists", "Index")</button> 
+  <br><br><br><br>
+
+  <h4>Clients</h4>
+    @foreach(Client client in Model.Clients)
+  {
+    <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new {id = client.ClientId})</li>
+  }
 </div>
