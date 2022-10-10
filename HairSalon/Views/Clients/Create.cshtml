@@ -1,23 +1,25 @@
 @{
   Layout = "_Layout";
 }
+<link rel="stylesheet" href="~/css/create.css">
 
 @model HairSalon.Models.Client
+<h2>Add Client</h1>
 
-<h1>Add Client</h1>
-
-@using (Html.BeginForm())
-{
-  @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})<br>
-  <br>
-  @Html.TextBoxFor(model => model.Regular, new { placeholder ="Regular Style", style = "width: 183px"})<br>
-  <br>
-  @Html.TextBoxFor(model => model.Last, new { placeholder = "Last Visit", style = "width: 183px"})<br>
-  <br>
-  @Html.TextBoxFor(model => model.Total, new { @Type = "number", placeholder = "Total Visits"})<br>
-  <br>
-  @Html.DropDownList("StylistId")
-  <br>
-  <button type="submit">Add Client</button>
-}
+<div class="contents">
+  @using (Html.BeginForm())
+  {
+    @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})<br>
+    <br>
+    @Html.TextBoxFor(model => model.Regular, new { placeholder ="Regular Style", style = "width: 183px"})<br>
+    <br>
+    @Html.TextBoxFor(model => model.Last, new { placeholder = "Last Visit", style = "width: 183px"})<br>
+    <br>
+    @Html.TextBoxFor(model => model.Total, new { @Type = "number", placeholder = "Total Visits"})<br>
+    <br>
+    @Html.DropDownList("StylistId")
+    <br>
+    <button type="submit">Add Client</button>
+  }
+</div>
 <button>@Html.ActionLink("All Clients", "Index")</button>

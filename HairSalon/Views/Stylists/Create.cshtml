@@ -1,10 +1,11 @@
 @{
   Layout = "_Layout";
 }
+<link rel="stylesheet" href="~/css/create.css">
 
 @model HairSalon.Models.Stylist
 
-<h1>Add Stylist</h1>
+<h2>Add Stylist</h1>
 @using (Html.BeginForm())
 {
   @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})

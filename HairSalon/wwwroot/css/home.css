@@ -1,18 +1,28 @@
 body{
-  background-image: url("https://images.squarespace-cdn.com/content/v1/513e12c3e4b0abff73bfbe90/1648226409496-H1SISE9CYVOXMUKUOH3Q/IMG_2072.jpeg");
-  background-position-y: -350px;
+  background-image: url("https://i.pinimg.com/originals/72/fa/ea/72faea3e3465e98ed9734846f9cb7704.jpg");
   overflow: hidden;
+  background-size: cover;
+  position: center;
+}
+
+h2{
+  margin-top: 20px;
+  position: absolute;
+  font-family: cursive;
+  font-weight: bold;
+  margin-left: 30px;
+  color: white;
 }
 
 .logo{
   position:absolute;
-  width: 300px;
+  width: 420px;
   margin-top: 10%;
-  margin-left: 38%;
+  margin-left: 34%;
 }
 
 .homeImg {  
-  border: solid pink 15px;
+  border: solid darkgray 10px;
   margin-top: 260px;
   position: absolute;
   animation: slide 4s;
@@ -24,7 +34,7 @@ body{
 }
 
 .homeImg2 {
-  border: solid pink 15px;
+  border: solid darkgray 10px;
   margin-top: 80px;
   margin-left:61.1%;
   position: absolute;
