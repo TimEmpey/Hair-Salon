@@ -22,7 +22,7 @@ _Website designed with the employees in mind to track current and past stylists,
 * _Open up your terminal and navigate to the desired landing folder_
 * _In terminal enter, ' "git clone https://github.com/TimEmpey/HairSalon '_
 * _In terminal enter 'code .' to open files in Visual Studio Code_
-* _In VS Code terminal navigate to the Bakery directory (file path ex. user/desktop/epicodus/projects/PierreBakery.Solutions/Bakery)_
+* _In VS Code terminal navigate to the HairSalon directory (file path ex. user/desktop/epicodus/projects/HairSalon/HairSalon)_
 * _Configure files with '$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0' & '$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2'_
 * _Run '$ dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0' to install Lazy Loading_
 * _Run '$ dotnet restore'_
